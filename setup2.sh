@@ -2,7 +2,7 @@
 rm -rf c4_deployment-5
 source test/bin/activate
 git clone https://github.com/Jmo-101/tf_bank.git
-cd c4_deployment-5
+cd tf_bank
 pip install -r requirements.txt
 pip install gunicorn
 python database.py
