@@ -66,4 +66,23 @@ Once everything was setup, I went on to create a command that will ssh into the 
 ssh ubuntu@"ip_address" 'bash -s < /home/ubuntu/setup.sh'
 
 scp /var/lib/jenkins/workspace/setup2.sh ubuntu@ip_address:/home/ubuntu
+```
+
+# Jenkins Pipeline Setup
+
+Within Jenkins, a multibranch pipeline was set up using GitHub credentials. The following steps were taken in the Jenkins pipeline configuration:
+
+1. **Multibranch Pipeline Creation:**
+   - Configured a multibranch pipeline in Jenkins, linking it to the GitHub repository containing the project.
+
+2. **Pipeline Execution:**
+   - Ran the `Jenkinsfilev1` in the multibranch pipeline configuration.
+   - The pipeline executed all necessary stages, including testing, building, and deploying the application.
+
+3. **Deployment to Second Instance:**
+   - Upon successful completion of the pipeline stages, the application was deployed on the second instance created in the infrastructure setup.
+
+<img width="800" alt="Screenshot 2023-10-13 at 11 04 51 PM" src="https://github.com/Jmo-101/tf_bank/assets/138607757/84a1e46d-8512-4968-9f56-e53d4db6e46a">
+
+<img width="800" alt="Screenshot 2023-10-13 at 11 04 17 PM" src="https://github.com/Jmo-101/tf_bank/assets/138607757/9e603024-b1d2-461d-9f3e-b51493dea512">
 
