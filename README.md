@@ -86,3 +86,11 @@ Within Jenkins, a multibranch pipeline was set up using GitHub credentials. The 
 
 <img width="800" alt="Screenshot 2023-10-13 at 11 04 17 PM" src="https://github.com/Jmo-101/tf_bank/assets/138607757/9e603024-b1d2-461d-9f3e-b51493dea512">
 
+# Jenkinsfilev2:
+- I decided to make a change to the HTML file, I made a tiny change to the title of the welcome screen of the app and then ran Jenkinsfilev2 with it. Once it ran and deployed successfully, I went on to check the application in the second instance and the HTML change appeared.
+
+<img width="700" alt="Screenshot 2023-10-14 at 12 05 10 AM" src="https://github.com/Jmo-101/tf_bank_app/assets/138607757/9026a80c-6636-401e-9865-54467cb3d12c">
+
+<img width="700" alt="Screenshot 2023-10-14 at 12 04 16 AM" src="https://github.com/Jmo-101/tf_bank_app/assets/138607757/1cc064e3-8154-4bf9-9c80-da0f64dcb737">
+
+
