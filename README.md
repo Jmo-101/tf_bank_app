@@ -55,4 +55,15 @@ Once the servers were created using Terraform, Jenkins was installed on one of t
    - Installed specific Python versions and set up virtual environments for both the Jenkins user and the Ubuntu user on the first instance.
    - Repeated the same process on the second instance.
 
+# Jenkinsfiles Setup
+
+## SSH and File Transfer Commands
+
+Once everything was setup, I went on to create a command that will ssh into the second server and download the required script for those files. I used a series of scp and ssh commands to execute this. 
+
+```bash
+# SSH into the second server and execute the setup script remotely
+ssh ubuntu@"ip_address" 'bash -s < /home/ubuntu/setup.sh'
+
+scp /var/lib/jenkins/workspace/setup2.sh ubuntu@ip_address:/home/ubuntu
 
