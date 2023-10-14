@@ -29,3 +29,30 @@ Within Terraform, a `main.tf` file was created to define the necessary resource 
 
 ### `variables.tf`
 Additionally, a `variables.tf` file was created to store sensitive variables that should not be publicly known.
+
+# Jenkins Setup Process
+
+## Installing Jenkins and Configuring SSH
+
+Once the servers were created using Terraform, Jenkins was installed on one of the instances. The following steps were taken:
+
+1. **Jenkins Installation:**
+   - Installed Jenkins on the designated instance created by Terraform.
+
+2. **User Login and SSH Key Generation:**
+   - Created a Jenkins password and logged in to the Jenkins user through the command line.
+   - Generated an SSH key within the Jenkins user environment.
+
+3. **SSH Setup:**
+   - Used the generated SSH key to establish an SSH connection to the second server created by Terraform.
+   - Tested the SSH connection to ensure successful communication between servers.
+
+4. **SSH Key Sharing:**
+   - Copied the public key contents from the first instance and pasted it into the `authorized_keys` file of the second instance.
+   - This setup allowed SSH access from the first instance to the second instance.
+
+5. **Python and Virtual Environment Installation:**
+   - Installed specific Python versions and set up virtual environments for both the Jenkins user and the Ubuntu user on the first instance.
+   - Repeated the same process on the second instance.
+
+
