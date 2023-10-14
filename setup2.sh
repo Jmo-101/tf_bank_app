@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf c4_deployment-5
+rm -rf tf_bank
 source test/bin/activate
 git clone https://github.com/Jmo-101/tf_bank.git
 cd tf_bank
