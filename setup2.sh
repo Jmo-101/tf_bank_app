@@ -1,8 +1,8 @@
 #!/bin/bash
-rm -rf tf_bank
+rm -rf tf_bank_app
 source test/bin/activate
-git clone https://github.com/Jmo-101/tf_bank.git
-cd tf_bank
+git clone https://github.com/Jmo-101/tf_bank_app.git
+cd tf_bank_app
 pip install -r requirements.txt
 pip install gunicorn
 python database.py
