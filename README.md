@@ -93,4 +93,8 @@ Within Jenkins, a multibranch pipeline was set up using GitHub credentials. The 
 
 <img width="700" alt="Screenshot 2023-10-14 at 12 04 16 AM" src="https://github.com/Jmo-101/tf_bank_app/assets/138607757/1cc064e3-8154-4bf9-9c80-da0f64dcb737">
 
+# Monitoring:
+The instance type I used for both these instances was a T2.large. Here was their respective CPU usage for both. 
+<img width="350" alt="Screenshot 2023-10-14 at 9 36 13 AM" src="https://github.com/Jmo-101/tf_bank_app/assets/138607757/99ec3899-1567-455a-af2e-34684e65f537">
+<img width="350" alt="Screenshot 2023-10-14 at 9 36 43 AM" src="https://github.com/Jmo-101/tf_bank_app/assets/138607757/f4b1c038-e131-4a93-a136-1757476a11f6">
 
